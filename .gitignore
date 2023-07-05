@@ -8,4 +8,4 @@ logs
 .bin
 scripts/train/logs/
 scripts/transformers/logs/
-scripts/transformers/embeddings.pkl
+/scripts/transformers/embeddings.pkl

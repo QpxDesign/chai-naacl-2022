@@ -3,9 +3,9 @@ This repo is sort of a windows port to the original CHAI branch, as I have made 
 - accelerate==0.20.3
 - cpprb==10.7.1
 - gym==0.17.3
-- transformers==4.21.0**
-- numpy==1.22.0** 
-- tensorflow==2.10.0** 
+- transformers==4.21.0 ★
+- numpy==1.22.0 ★
+- tensorflow==2.10.0 ★
 - download CUDA version 10.1 for Windows from Nvidia's website and run the installer
-** = ran into issues with different versions of these packages
+★ = ran into issues with different versions of these packages
 

@@ -1,0 +1,11 @@
+* Some changes I made to get this working on Windows
+This repo is sort of a windows port to the original CHAI branch, as I have made some changes that fix overall bugs in the original repo and some fixes that make it run on windows. In order to get this to work on your Windows computer, clone the repo into your User folder (example: Users/Adam/chai-etc) and change "qrosh" to your windows username. Follow instructions from the original repo's read me, and beaware that you will probably run into a plethora of python package errors relating to out-of-date packages and dependency errors. See below for a list of what verisons of each required package worked for me: (if a package isn't listed than the default version worked fine)
+- accelerate==0.20.3
+- cpprb==10.7.1
+- gym==0.17.3
+- transformers==4.21.0**
+- numpy==1.22.0** 
+- tensorflow==2.10.0** 
+- download CUDA version 10.1 for Windows from Nvidia's website and run the installer
+** = ran into issues with different versions of these packages
+

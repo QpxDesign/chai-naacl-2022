@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-
+import sys
+import os
+sys.path.append(r"C:\Users\qrosh\chai-naacl-2022")
 from flatten_dict.flatten_dict import flatten, unflatten
 from neural_chat.algo.emaq_cql import EMAQ_CQL
 from neural_chat.actor import CraigslistEMAQActor

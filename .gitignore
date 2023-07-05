@@ -6,3 +6,5 @@ logs
 .direnv
 *.pyc
 .bin
+scripts/train/logs/
+scripts/transformers/logs/

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-
+import sys
+import os
+sys.path.append(r"C:\Users\qrosh\chai-naacl-2022")
 from flatten_dict.flatten_dict import flatten, unflatten
 from neural_chat.algo.brac import BRAC
 from neural_chat.actor import DictActor
@@ -33,7 +35,7 @@ if __name__ == "__main__":
     parser.add_argument("--clip-log-prob", type=float, default=-10.0)
     parser.add_argument("--cql-weight", type=float, default=0.0)
     parser.add_argument("--price-decrease-penalty", action="store_true")
-    parser.add_argument("--num-workers", type=int, default=4)
+    parser.add_argument("--num-workers", type=int, default=0)
     args = parser.parse_args()
     args.hidden_dim = [int(d) for d in args.hidden_dim.split(",")]
 

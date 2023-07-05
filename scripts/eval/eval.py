@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(r"C:\Users\qrosh\chai-naacl-2022")
 from typing import Dict, Any, Optional
 from neural_chat.eval import *
 

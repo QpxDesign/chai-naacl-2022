@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-
+import sys
+import os
+sys.path.append(r"C:\Users\qrosh\chai-naacl-2022")
 from flatten_dict.flatten_dict import flatten, unflatten
 from neural_chat.algo import EMAQ_NOA
 from neural_chat.actor import CraigslistDummyActor
@@ -25,12 +27,12 @@ if __name__ == "__main__":
     parser.add_argument("--path-length", type=int, default=100)
     parser.add_argument("--device", type=str, default="cuda")
     parser.add_argument("--num-epochs", type=int, default=5000)
-    parser.add_argument("--batch-size", type=int, default=512)
+    parser.add_argument("--batch-size", type=int, default=96)
     parser.add_argument("--hidden-dim", type=str, default="256,256")
     parser.add_argument("--clip-log-prob", type=float, default=-10.0)
     parser.add_argument("--cql-weight", type=float, default=0.1)
     parser.add_argument("--price-decrease-penalty", action="store_true")
-    parser.add_argument("--num-workers", type=int, default=4)
+    parser.add_argument("--num-workers", type=int, default=0)
     args = parser.parse_args()
     args.hidden_dim = [int(d) for d in args.hidden_dim.split(",")]
 

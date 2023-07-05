@@ -70,6 +70,11 @@ To play around with CHAI, run the following command:
 
 The =eval.py= script also contains options for the automatic evaluations done in the paper, which can be accomplished by changing the =buyer= option to different values. Check out the script for more details.
 
+* EXAMPLE eval.py run command:
+#+begin_src bash
+python eval.py  --data-path ../../data/test.json --gpt-dir ../transformers/logs/gpt2/checkpoint-2000  --checkpoint-file ../train/logs/chai/snapshot_4999.pkl --buyer human  --seller ours  --num-rollouts 50 --output-path "results_human.json"  --debug
+#+end_src
+
 * Cite our work
 If you found our work useful, please cite it as follows:
 
